@@ -1,6 +1,21 @@
 from queue import PriorityQueue
 import math
+"""
+Problem
+------------
 
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
 def dijkstra(G, s):
     n = len(G)
     pq = PriorityQueue()

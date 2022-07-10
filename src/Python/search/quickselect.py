@@ -1,5 +1,20 @@
 
+"""
+Problem
+------------
 
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
 
 def partition(arr, l, r):
      i = l
@@ -11,6 +26,25 @@ def partition(arr, l, r):
 
      return i
 
+"""
+Problem
+------------
+Find i-th element in array.
+
+Parameters
+----------
+arr : array
+    array of elements
+k : int
+    searched number
+    
+Algoirthm
+---------
+Algorithm takes a pivot and sorts array in two subarrays bigger than pivot and lower
+than pivot then cheks if pivot is searched element, if not it continues to do the same. 
+
+Complexity O(n)
+"""
 
 def select(arr, k):
     l, r = 0, len(arr)

@@ -1,3 +1,21 @@
+"""
+Problem
+------------
+Sort elements that you can always go from elements on the left to element on the right
+
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+Based on dfs, visits verticle and if it is processed - appended to the end of sorted list.
+On the end list of verticles must be reversed.
+
+Complexity O(V)
+
+"""
 
 def topsortvisit(G, v, visited, sorted):
     visited[v] = True

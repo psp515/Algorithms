@@ -1,3 +1,20 @@
+"""
+Problem
+------------
+Finding all possible routes in graph.
+
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+Simply if verticle is not visited algorithm visits it.
+
+Complexity O(V)
+
+"""
 def dfsVisit(G, u, visited, visittime, quittime, parent):
     global time
     time += 1

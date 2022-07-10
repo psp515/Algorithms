@@ -1,6 +1,23 @@
 import math
 import queue
 
+"""
+Problem
+------------
+
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
+
 def prim(G):
     Q = queue.PriorityQueue()
     wages = [math.inf for _ in range(len(G))]

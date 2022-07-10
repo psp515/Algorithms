@@ -1,5 +1,19 @@
 
-# edge list
+"""
+Problem
+------------
+
+
+Parameters
+----------
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
 def belmanford(G, s, v):
     n = len(G)
     parent = [-1 for _ in range(v)]

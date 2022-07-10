@@ -1,7 +1,25 @@
 # most to krawędź która rozspójnia graf
 import math
 
+"""
+Problem
+------------
+Finding bridges (deleting this verticle breaks graph) in graph.
 
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+Based on dfs, algorithm visit verticles and perform low function.
+low[parent] = min(dist[parent], low[connected verticles], dist[connected verticles])
+and if certain condittons occure we can know if edge is bridge.
+
+Complexity O(V)
+
+"""
 def DFS_visit(G, u, visited, disc, low, parent, bridges):
     global time
     time += 1

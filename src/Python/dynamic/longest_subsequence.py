@@ -1,5 +1,22 @@
 
+"""
+Problem
+------------
 
+Finding longest increasing/decreasing sequence.
+
+Parameters
+----------
+arr : array
+    array of elements
+
+Algoirthm
+---------
+For i-th element search j in 0...i-1 that sequence to j is the longest and arr[j] < arr[i].
+
+Complexity: O(n^2)
+
+"""
 
 def lis(arr):
     n = len(arr)

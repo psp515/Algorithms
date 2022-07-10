@@ -29,8 +29,23 @@ def union_class(i, j):
 
     return True
 
-# G as edge list
-def Kruskalclass(G, vert):
+"""
+Problem
+------------
+
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
+def Kruskal(G, vert):
     G.sort(key=lambda x: x[2])
 
     nodes = [Node(i) for i in range(len(G))]

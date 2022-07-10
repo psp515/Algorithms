@@ -1,4 +1,30 @@
 
+"""
+Problem
+------------
+Similar problem to knapsack problem yet now backpack has max height and width
+it means that sum of heights is lower than height and sum of widths is lower than width.
+
+Parameters
+----------
+
+widths : array
+    array with widths of elements
+heights : array
+    array with heights of elements
+cost : int
+    array with cost of elements
+maxheight : int
+    maximal backpack height
+maxwidth : int
+    maximal backpack width
+Algoirthm
+---------
+
+
+Complexity: O(n^3)
+
+"""
 
 def bigknapsack(widths, heights, cost, maxheight, maxwidth):
     n = len(widths)

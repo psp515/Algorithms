@@ -1,14 +1,33 @@
 
+"""
+Problem
+------------
+Finding most valuable items to take that weight less than maxsize.
 
-# f[i][b] -> i - item index, b - package size
+Parameters
+----------
 
-# items - sizes, cost - item price, maxsize - backpack size
+items : arr
+    item sizes
+cost : arr
+    item price
+maxsize : int
+    backpack size
+
+Algoirthm
+---------
+
+Finding most valuable combination to take to i-th item and j of backpack size.
+
+Complexity: O(n^2)
+"""
+
 def knapsack(items, cost, maxsize):
     n = len(items)
     f = [[0 for _ in range(maxsize + 1)] for _ in range(n)]
 
     for i in range(maxsize + 1):
-        if i - items[0] >=0:
+        if i - items[0] >= 0:
             f[0][i] = cost[0]
 
 

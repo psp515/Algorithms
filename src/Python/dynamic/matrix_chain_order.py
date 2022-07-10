@@ -1,3 +1,21 @@
+"""
+Problem
+------------
+Geting order of matrix multiplification that needs minimal number of operations.
+
+Parameters
+----------
+p : array
+    list of matrix sizes
+
+Algoirthm
+---------
+
+Finding minimal number of actios with multyplying matrix 0..i * j * k...n.
+
+Complexity: O(n^3)
+
+"""
 
 def mcs(p):
     n = len(p)

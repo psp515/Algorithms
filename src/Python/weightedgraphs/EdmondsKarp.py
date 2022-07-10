@@ -1,5 +1,20 @@
 from collections import deque
+"""
+Problem
+------------
 
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
 def get_path(G, Gflow, s, t, n):
     parent = [-1 for _ in range(n)]
     min_flow = [0 for _ in range(n)]

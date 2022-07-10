@@ -1,6 +1,25 @@
 
 
+"""
+Problem
+------------
+Finding subgrafs that for verticle v you can always visit u and from u you can visit v.
 
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+
+First algorithm does similar thing that topological sort does.
+Secondly graph is transposed.
+Thirdly it does modified dfs in order of topological sort and appends processed verticle.
+
+Complexity O(V)
+
+"""
 def DFS_visit(G, i, visited, stack):
     visited[i] = True
 

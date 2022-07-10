@@ -1,5 +1,23 @@
+"""
+Problem
+------------
+Find longest common subsequence.
 
+Parameters
+----------
+A: array
+    array of elements
+B: array
+    array of elements
 
+Algoirthm
+---------
+
+Finding longest common to i-th element in A array and in whole B array.
+
+Complexity O(n^2)
+
+"""
 def lcs(A, B):
     n, m = len(A), len(B)
     f = [[0 for _ in range(m+1)]for _ in range(n+1)]

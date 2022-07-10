@@ -1,6 +1,22 @@
 
 
+"""
+Problem
+------------
+Finding eluer cycle in graph and printing it.
 
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+Modified dfs that does not use visited array and 'deletes' visited edges.
+
+Complexity O(E)
+
+"""
 def has_eulerCycle(G):
     for x in G:
         if len(x) % 2 == 1:

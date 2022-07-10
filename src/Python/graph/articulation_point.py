@@ -1,6 +1,26 @@
 import math
-# to taki wierzcholek którego usuniecie zwieksza liczbe
-# silnie spójnych składowych
+
+"""
+Problem
+------------
+Finding articulation point (if we delete this verticle we enlarge number of scc) in graph.
+
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+
+Algoirthm
+---------
+
+Based on dfs, algorithm visit verticles and perform low function.
+low[parent] = min(dist[parent], low[connected verticles], dist[connected verticles])
+and if certain condittons occure we can know if edge is bridge.
+
+Complexity O(V)
+
+"""
+
 def DFS_visit(G, u, visited, disc, low, parent, ap):
     child = 0
     global time

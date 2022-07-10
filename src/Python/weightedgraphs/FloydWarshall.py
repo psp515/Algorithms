@@ -1,5 +1,20 @@
 import math
+"""
+Problem
+------------
 
+
+Parameters
+----------
+
+
+
+Algoirthm
+---------
+
+Complexity O()
+
+"""
 def floyd_warshall(G):
     n = len(G)
     for k in range(n):

@@ -7,14 +7,18 @@ from sorting import bubblesort
 from sorting import selectionsort
 from sorting import insertionsort
 
+def sorting():
+    quicksort.test()
+    mergesort.test()
+    heapsort.test()
+    countingsort.test()
+    bucketsort.test()
+    bubblesort.test()
+    selectionsort.test()
+    insertionsort.test()
 
 if __name__ == "__main__":
     print("Algorithms")
-    #quicksort.test()
-    #mergesort.test()
-    #heapsort.test()
-    #countingsort.test()
-    #bucketsort.test()
-    #bubblesort.test()
-    #selectionsort.test()
-    insertionsort.test()
+    sorting()
+
+

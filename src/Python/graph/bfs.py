@@ -1,6 +1,24 @@
 from collections import deque
 
-# Odzwiedza wszystkie wierzchołki do których da się dojść z s
+"""
+Problem
+------------
+Finding all posible verticles from verticle s
+
+Parameters
+----------
+G : array
+    Verticles of the graph with edges from verticle.
+s = None : int
+    index of starting verticle
+
+Algoirthm
+---------
+Algorithm does the waves and in each wave visits few verticles. (All verticles that are avaliable from previous wave.)
+
+Complexity O(V)
+
+"""
 def bfs_list(G, s = None):
     n = len(G)
 
