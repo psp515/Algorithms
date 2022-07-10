@@ -12,7 +12,7 @@ arr : array
 value : int
     searched value
 
-Algoirthm
+Algorithm
 ---------
 Binary search compares the target value to the middle element of the array.
 If they are not equal, algorithm eliminates one half of the array and does

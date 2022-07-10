@@ -12,7 +12,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithm first divides array into two subarrays and repeats the same with each half till one element

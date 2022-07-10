@@ -10,7 +10,7 @@ Parameters
 arr : array
     array of elements
 
-Algoirthm
+Algorithm
 ---------
 For i-th element search j in 0...i-1 that sequence to j is the longest and arr[j] < arr[i].
 

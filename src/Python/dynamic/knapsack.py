@@ -14,7 +14,7 @@ cost : arr
 maxsize : int
     backpack size
 
-Algoirthm
+Algorithm
 ---------
 
 Finding most valuable combination to take to i-th item and j of backpack size.

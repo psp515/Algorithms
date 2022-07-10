@@ -38,7 +38,7 @@ arr : array
 k : int
     searched number
     
-Algoirthm
+Algorithm
 ---------
 Algorithm takes a pivot and sorts array in two subarrays bigger than pivot and lower
 than pivot then cheks if pivot is searched element, if not it continues to do the same. 

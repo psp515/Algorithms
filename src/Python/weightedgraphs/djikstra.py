@@ -3,17 +3,22 @@ import math
 """
 Problem
 ------------
-
+Finding shortest paths to verticles from s
 
 Parameters
 ----------
+G : array
+    Verticles of the graph with edges from verticle and each edge has positive weight.
+s : int 
+    Index of starting verticle.
 
-
-
-Algoirthm
+Algorithm
 ---------
 
-Complexity O()
+From PQ pop verticla that has minimal path from first verticle and relax each edge
+from this verticle if edge is relaxed put verticle to PQ. Then again pop verticle and repeat.
+    
+Complexity: O(ElogV)
 
 """
 def dijkstra(G, s):

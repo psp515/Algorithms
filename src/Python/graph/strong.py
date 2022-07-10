@@ -10,7 +10,7 @@ Parameters
 G : array
     Verticles of the graph with edges from verticle.
 
-Algoirthm
+Algorithm
 ---------
 
 First algorithm does similar thing that topological sort does.

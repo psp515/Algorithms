@@ -2,17 +2,19 @@ import math
 """
 Problem
 ------------
-
+Finding minimal paths to from each verticle to every other verticle.
 
 Parameters
 ----------
+G : array
+    Martrix of routes with weights.
 
 
-
-Algoirthm
+Algorithm
 ---------
+Finds minmal route from i to k and from k to j.
 
-Complexity O()
+Complexity: O(V^3)
 
 """
 def floyd_warshall(G):

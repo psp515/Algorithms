@@ -16,7 +16,7 @@ Parameters
 arr : Array
     array of items to sort 
 
-Algoirthm
+Algorithm
 ---------
 
 Algorithm divides array in two sub arrays sorted and unsorted. 

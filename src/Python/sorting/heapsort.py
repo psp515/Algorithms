@@ -10,7 +10,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithm creates max heap and then pops max element n - times also after each pop heap must be repaired.

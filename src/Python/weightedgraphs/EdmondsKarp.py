@@ -2,17 +2,23 @@ from collections import deque
 """
 Problem
 ------------
-
+Finding biggest flow in graph from s to t.
 
 Parameters
 ----------
+G : array
+    Verticles of the graph with edges from verticle.
+s: int
+    starting vertex
+t: int 
+    ending vertex
 
-
-
-Algoirthm
+Algorithm
 ---------
+Algorthm finds minimal route to t and adds maximal possible flow on this route,
+and repeats till there is no route to t.
 
-Complexity O()
+Complexity O(EV^2)
 
 """
 def get_path(G, Gflow, s, t, n):
@@ -40,8 +46,8 @@ def get_path(G, Gflow, s, t, n):
 
     return 0, parent
 
-# edmonds_karp
-def get_flow(G, s, t, n):
+def edmonds_karp(G, s, t):
+    n = len(G)
     r_matrix = [[0 for _ in range(n)] for _ in range(n)]
     maxflow = 0
     while True:

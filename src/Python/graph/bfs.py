@@ -12,7 +12,7 @@ G : array
 s = None : int
     index of starting verticle
 
-Algoirthm
+Algorithm
 ---------
 Algorithm does the waves and in each wave visits few verticles. (All verticles that are avaliable from previous wave.)
 

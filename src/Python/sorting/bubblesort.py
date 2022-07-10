@@ -11,7 +11,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algoritms swpas two next elements if for i < j, arr[i] > arr[j]. It means witch each iteration 1 element 

@@ -8,7 +8,7 @@ Parameters
 G : array
     Verticles of the graph with edges from verticle.
 
-Algoirthm
+Algorithm
 ---------
 Based on dfs, visits verticle and if it is processed - appended to the end of sorted list.
 On the end list of verticles must be reversed.

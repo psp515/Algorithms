@@ -10,7 +10,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithm creates new array with length of biggest number in array ant then simply counts number of 

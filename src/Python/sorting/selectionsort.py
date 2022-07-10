@@ -11,7 +11,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithm divides array into 2 sectors sorted and unsorted. Next element for i-th position is searched is 

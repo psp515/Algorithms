@@ -18,9 +18,11 @@ maxheight : int
     maximal backpack height
 maxwidth : int
     maximal backpack width
-Algoirthm
+
+Algorithm
 ---------
 
+For i-th element find biggest price to the width of j and height of k.
 
 Complexity: O(n^3)
 

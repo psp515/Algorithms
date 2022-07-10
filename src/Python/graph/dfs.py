@@ -8,7 +8,7 @@ Parameters
 G : array
     Verticles of the graph with edges from verticle.
 
-Algoirthm
+Algorithm
 ---------
 Simply if verticle is not visited algorithm visits it.
 

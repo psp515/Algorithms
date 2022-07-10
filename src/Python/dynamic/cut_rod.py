@@ -12,7 +12,7 @@ arr : array
 rod_len : int
     length of rod to cut
 
-Algoirthm
+Algorithm
 ---------
 
 Algorithm each time finds best income of cutting rod 

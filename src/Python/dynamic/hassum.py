@@ -10,7 +10,7 @@ arr : array
 T : int
     searched sum
 
-Algoirthm
+Algorithm
 ---------
 Algorithm takes i-th element and checks if each possible combination of arr[i] + j is
 possible to create if yes it is saved in array.

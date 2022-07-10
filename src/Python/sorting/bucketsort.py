@@ -13,7 +13,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithms simply creates n buckets and each bucket menas elements range. We are asignings array elements to buckets 

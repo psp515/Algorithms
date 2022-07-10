@@ -10,7 +10,7 @@ Parameters
 G : array
     Verticles of the graph with edges from verticle.
 
-Algoirthm
+Algorithm
 ---------
 Modified dfs that does not use visited array and 'deletes' visited edges.
 

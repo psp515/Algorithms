@@ -11,7 +11,7 @@ Parameters
 G : array
     Verticles of the graph with edges from verticle.
 
-Algoirthm
+Algorithm
 ---------
 Based on dfs, algorithm visit verticles and perform low function.
 low[parent] = min(dist[parent], low[connected verticles], dist[connected verticles])

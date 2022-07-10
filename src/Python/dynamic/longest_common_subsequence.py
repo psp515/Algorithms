@@ -10,7 +10,7 @@ A: array
 B: array
     array of elements
 
-Algoirthm
+Algorithm
 ---------
 
 Finding longest common to i-th element in A array and in whole B array.

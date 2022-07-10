@@ -11,7 +11,7 @@ Parameters
 arr : Array
     array of items to sort 
     
-Algoirthm
+Algorithm
 ---------
 
 Algorithm select element for comparing and displaces bigger elements on right and lower on left.

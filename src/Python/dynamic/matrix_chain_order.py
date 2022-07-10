@@ -8,7 +8,7 @@ Parameters
 p : array
     list of matrix sizes
 
-Algoirthm
+Algorithm
 ---------
 
 Finding minimal number of actios with multyplying matrix 0..i * j * k...n.

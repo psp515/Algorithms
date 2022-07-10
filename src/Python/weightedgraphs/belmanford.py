@@ -2,16 +2,18 @@
 """
 Problem
 ------------
-
+Finding shortest paths to verticles.
 
 Parameters
 ----------
+G : array
+    Edges of the graph and does not contain cycle that its path is lower than 0.
 
-
-Algoirthm
+Algorithm
 ---------
+Perform relaxation for each combination of verticle and edge.
 
-Complexity O()
+Complexity O(VE)
 
 """
 def belmanford(G, s, v):

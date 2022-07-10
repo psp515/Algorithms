@@ -1,3 +1,23 @@
+"""
+Problem
+------------
+Finding minimal spanning tree.
+
+Parameters
+----------
+G : array
+    Edges in graph.
+
+Algorithm
+---------
+First we sort edges by weight.
+We take i-th element and checks if there will be a cycle in graph if no we take edge.
+
+Complexity: O(ElogV)
+
+"""
+
+
 class Node:
     def __init__(self, value):
         self.parent = self
@@ -29,22 +49,6 @@ def union_class(i, j):
 
     return True
 
-"""
-Problem
-------------
-
-
-Parameters
-----------
-
-
-
-Algoirthm
----------
-
-Complexity O()
-
-"""
 def Kruskal(G, vert):
     G.sort(key=lambda x: x[2])
 

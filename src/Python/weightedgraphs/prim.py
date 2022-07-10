@@ -4,17 +4,19 @@ import queue
 """
 Problem
 ------------
-
+Finding minimal spanning tree.
 
 Parameters
 ----------
+G : array
+    Edges in graph.
 
 
-
-Algoirthm
+Algorithm
 ---------
+Adds lowest possible edge to mst each time till takes V-1 edges.
 
-Complexity O()
+Complexity: O(ElogV)
 
 """
 
