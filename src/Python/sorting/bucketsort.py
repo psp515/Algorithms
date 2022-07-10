@@ -1,7 +1,32 @@
 import math
-
 from sorting import sorting_test
 from sorting import quicksort
+
+"""
+Problem
+------------
+Sorting array.
+
+Parameters
+----------
+
+arr : Array
+    array of items to sort 
+    
+Algoirthm
+---------
+
+Algorithms simply creates n buckets and each bucket menas elements range. We are asignings array elements to buckets 
+then we have to sort each bucket (but each bucket contains few elements). At the end we rewrite elements
+
+Best Complexity O(n)
+Avg. Complexity: O(n)
+Worst Complexity O(n^2)
+
+* we have to assume that elements are from uniform distribution 
+
+
+"""
 
 def bucketsort(arr):
     n = len(arr)

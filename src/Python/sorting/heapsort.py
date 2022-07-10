@@ -1,4 +1,25 @@
 from sorting import sorting_test
+"""
+Problem
+------------
+Sorting array.
+
+Parameters
+----------
+
+arr : Array
+    array of items to sort 
+    
+Algoirthm
+---------
+
+Algorithm creates max heap and then pops max element n - times also after each pop heap must be repaired.
+
+Best Complexity O(nlogn)
+Avg. Complexity: 0(nlogn)
+Worst Complexity O(nlogn)
+
+"""
 
 def left(i):
     return i*2 + 1

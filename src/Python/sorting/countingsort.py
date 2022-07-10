@@ -1,4 +1,29 @@
 from sorting import sorting_test
+"""
+Problem
+------------
+Sorting array.
+
+Parameters
+----------
+
+arr : Array
+    array of items to sort 
+    
+Algoirthm
+---------
+
+Algorithm creates new array with length of biggest number in array ant then simply counts number of 
+elements of index value.
+
+Best Complexity O(n)
+Avg. Complexity: O(n)
+Worst Complexity O(n)
+
+* we have to assume first that all elements are lower than length of array and minimal element is > 0 or we can 
+shift this range yet then time complexity is bigger.
+
+"""
 
 def countingsort(arr):
     n = len(arr)

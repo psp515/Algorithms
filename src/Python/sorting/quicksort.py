@@ -1,8 +1,27 @@
 from sorting import sorting_test
 
-# O(nlogn)
+"""
+Problem
+------------
+Sorting array.
 
+Parameters
+----------
 
+arr : Array
+    array of items to sort 
+    
+Algoirthm
+---------
+
+Algorithm select element for comparing and displaces bigger elements on right and lower on left.
+Then again each half is sorted in the same way.
+
+Best Complexity O(nlogn)
+Avg. Complexity: 0(nlogn)
+Worst Complexity O(n^2)
+
+"""
 def _partition(arr, l, r):
     i = l
     for j in range(l, r):
@@ -22,7 +41,7 @@ def _quicksort(arr, l, r):
 def quicksort(arr):
     _quicksort(arr, 0, len(arr)-1)
 
-def quicksort2(arr):
+def quicksort_iterative(arr):
     stack = []
     stack.append( (0, len(arr)-1) )
     while stack:
@@ -35,4 +54,4 @@ def quicksort2(arr):
 
 def test():
     sorting_test.sorting_test(quicksort)
-    sorting_test.sorting_test(quicksort2)
+    sorting_test.sorting_test(quicksort_iterative)
