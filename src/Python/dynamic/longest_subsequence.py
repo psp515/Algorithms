@@ -32,4 +32,14 @@ def lis(arr):
         if f[i] > f[max_index]:
             max_index = i
 
-    return max_index, p
+    return f[max_index]
+
+def _test(G, V):
+    ans = lis(G)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- lis ------------")
+    array = [5, 6, 7, 8, 9, 1, 2, 3, 4, 7, 9, 1, 213]
+    ans = 7
+    _test(array, ans)

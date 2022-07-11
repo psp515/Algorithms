@@ -30,3 +30,14 @@ def lcs(A, B):
             f[i][j] = max(tmp, f[i-1][j], f[i][j-1])
 
     return f[-1][-1]
+
+def _test(A, B, V):
+    ans = lcs(A, B)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- lcs ------------")
+    A = [1, 5, 3, 2, 5, 4, 22, 1230]
+    B = [3, 7, 2, 5, 7, 9, 4, 23]
+    ans = 4
+    _test(A, B, ans)

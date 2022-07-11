@@ -18,6 +18,20 @@ from graph import topsort
 from graph import strong
 from graph import bridges
 
+from weightedgraphs import belmanford
+from weightedgraphs import prim
+from weightedgraphs import kruskal
+from weightedgraphs import FloydWarshall
+from weightedgraphs import EdmondsKarp
+from weightedgraphs import djikstra
+
+from dynamic import cut_rod
+from dynamic import hassum
+from dynamic import knapsack
+from dynamic import longest_subsequence
+from dynamic import longest_common_subsequence
+from dynamic import matrix_chain_order
+
 def sorting():
     print("------------ Sorting Algorithms ---------------")
     quicksort.test()
@@ -31,6 +45,12 @@ def sorting():
 
 def dynamic():
     print("------------ Dynamic Algorithms ---------------")
+    cut_rod.test()
+    hassum.test()
+    knapsack.test()
+    longest_subsequence.test()
+    longest_common_subsequence.test()
+    matrix_chain_order.test()
 
 def graph():
     print("------------ Graph Algorithms -----------------")
@@ -42,10 +62,14 @@ def graph():
     topsort.test()
     articulation_point.test()
 
-
-
 def weighted_graph():
     print("------------ Weighted Graph Algorithms --------")
+    belmanford.test()
+    prim.test()
+    kruskal.test()
+    FloydWarshall.test()
+    EdmondsKarp.test()
+    djikstra.test()
 
 def search():
     print("------------ Search Algorithms ----------------")
@@ -54,10 +78,10 @@ def search():
 
 if __name__ == "__main__":
     print("Algorithms")
-    #sorting()
-    #dynamic()
+    sorting()
+    dynamic()
     graph()
-    #weighted_graph()
-    #search()
+    weighted_graph()
+    search()
 
 

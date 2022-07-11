@@ -32,3 +32,13 @@ def mcs(p):
                     f[i][j] = q
 
     return f[1][n-1]
+
+def _test(G, V):
+    ans = mcs(G)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- mcs ------------")
+    array = [40, 20, 30, 10, 30]
+    ans = 26000
+    _test(array, ans)

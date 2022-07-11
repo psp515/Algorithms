@@ -64,3 +64,25 @@ def edmonds_karp(G, s, t):
             x = p
 
     return maxflow
+
+def _test(G, V, s, t):
+    ans = edmonds_karp(G, s, t)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- edmonds_karp ------------")
+    graph = [[0,5,0,0,0],
+             [0,0,3,0,0],
+             [0,0,0,4,0],
+             [0,0,0,0,5],
+             [0,0,0,0,0]]
+    ans = 3
+    _test(graph, ans, 0, 4)
+
+    graph = [[0, 5, 0, 0],
+             [0, 0, 3, 2, 0],
+             [0, 0, 0, 4, 0],
+             [0, 0, 0, 0, 5],
+             [0, 0, 0, 0, 0]]
+    ans = 5
+    _test(graph, ans, 0, 4)

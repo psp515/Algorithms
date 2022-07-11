@@ -37,7 +37,7 @@ def bucketsort(arr):
         buckets[index].append(arr[i])
 
     for bucket in buckets:
-        quicksort.quicksort2(bucket)
+        quicksort.quicksort(bucket)
 
     n_arr = []
 

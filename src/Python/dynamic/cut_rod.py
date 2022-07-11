@@ -22,14 +22,24 @@ Complexity: O(n^2)
 
 """
 
-def cut_rod(arr, rod_len):
-    f = [-math.inf for i in range(rod_len+1)]
+def cut_rod(arr, n):
+    f = [-1 for _ in range(0, n + 1)]
     f[0] = 0
 
-    for i in range(rod_len + 1):
-        q = f[i]
-        for j in range(0, rod_len + 1):
-            q = max(f[i], f[i - j] + arr[j])
+    for i in range(1, n + 1):
+        q = -math.inf
+        for j in range(1, i + 1):
+            q = max(q, f[i - j] + arr[j - 1])
         f[i] = q
+    return f[n]
 
-    return f[-1]
+def _test(G, V):
+    ans = cut_rod(G, len(G))
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- cut_rod ------------")
+    array = [2, 5, 7, 8, 10, 12]
+    ans = 15
+    _test(array, ans)
+

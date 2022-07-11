@@ -40,8 +40,7 @@ def dijkstra(G, s):
 
     return parent
 
-# matrix
-
+# matrix implementation
 def min_val(G, dist, set):
     min = math.inf
     min_index = -1
@@ -51,7 +50,6 @@ def min_val(G, dist, set):
             min_index = u
 
     return min_index
-
 def dijkstra2(G, s):
     n = len(G)
     dist = [math.inf for _ in range(n)]
@@ -68,4 +66,29 @@ def dijkstra2(G, s):
                 if weight + dist[i] < dist[j]:
                     dist[j] = dist[i] + weight
 
+
+def _test(G, V, s):
+    ans = dijkstra(G, s)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- dijkstra ------------")
+    graph = [[(1, 10), (3, 5)],
+         [(0, 10), (2, 1)],
+         [(1, 1), (3, 5)],
+         [(0, 5), (2, 5)]]
+    ans = [-1, 0, 3, 0]
+    _test(graph, ans, 0)
+
+    graph = [[(1, 4), (7, 8)],
+         [(1, 4), (7, 11), (2, 8)],
+         [(1, 8), (3, 7), (5, 4), (8, 2)],
+         [(2, 7), (4, 9), (5, 15)],
+         [(4, 9), (4, 10)],
+         [(3, 14), (2, 4), (6, 2), (4, 10)],
+         [(5, 2), (8, 6), (7, 1)],
+         [(0, 8), (6, 1), (7, 8)],
+         [(2, 2), (7, 7), (6, 6)]]
+    ans = [-1, 0, 1, 2, 5, 6, 7, 0, 2]
+    _test(graph, ans, 0)
 

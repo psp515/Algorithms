@@ -10,7 +10,7 @@ def binsearch_test(f):
     for i in range(3):
         arrays[i][0].sort()
         x = f(arrays[i][0], arrays[i][1])
-        print("Is succesfull", arrays[i][2] == x)
+        print("Is succesfull:", arrays[i][2] == x)
 
     x = f([7, 8, 9, 10, 12], 5)
     print("Is succesfull:", -1 == x)

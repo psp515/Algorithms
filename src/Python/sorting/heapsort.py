@@ -57,4 +57,4 @@ def heapsort(arr):
         repair_heap(arr, i, 0)
 
 def test():
-    sorting_test.sorting_test(heapsort,[10],True)
+    sorting_test.sorting_test(heapsort)

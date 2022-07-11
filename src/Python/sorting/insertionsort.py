@@ -37,4 +37,4 @@ def insertionsort(arr):
         arr[j + 1] = key
 
 def test():
-    sorting_test.sorting_test(insertionsort)
+    sorting_test.sorting_test(insertionsort,[10, 100, 1000, 4000])

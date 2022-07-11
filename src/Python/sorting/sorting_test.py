@@ -22,7 +22,7 @@ def testit(function, arr, showarr):
     issuccesfull = arrcpy == arr
     if showarr:
         print(arr)
-    print("Is succesfull", issuccesfull)
+    print("Is succesfull:", issuccesfull)
     print("Sort time:", round(e_time2, 3))
     print("Standard sort time:", round(e_time1, 3))
 
