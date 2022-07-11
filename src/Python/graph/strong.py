@@ -33,7 +33,7 @@ def transpose(G):
     g = [[] for _ in range(len(G))]
     for i in range(len(G)):
         for j in range(len(G[i])):
-            g[j].append(i)
+            g[G[i][j]].append(i)
 
     return g
 
@@ -67,5 +67,18 @@ def strong_components(G):
             i += 1
 
     return strong
+
+def _test(G, V):
+    ans = strong_components(G)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- Strong ------------")
+    graph = [[2, 3], [0], [1], [4], []]
+    ref = [[1], [2], [0], [0], [3]]
+    print("Transposition:", transpose(graph) == ref)
+
+    ans = [[0, 1, 2], [3], [4]]
+    _test(graph, ans)
 
 

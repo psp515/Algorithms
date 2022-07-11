@@ -19,12 +19,12 @@ Algorithm does the waves and in each wave visits few verticles. (All verticles t
 Complexity O(V)
 
 """
-def bfs_list(G, s = None):
+def bfs(G, s = None):
     n = len(G)
 
     visited = [False for _ in range(n)]
     parent = [None for _ in range(n)]
-    visittimes = [-1 for _ in range(n)]
+    visittimes = [0 for _ in range(n)]
 
     q = deque()
     q.append(s)
@@ -38,7 +38,19 @@ def bfs_list(G, s = None):
             if visited[v] == False:
                 visited[v] = True
                 parent[v] = u
-                visittimes[s] = time
+                visittimes[v] = time
                 q.append(v)
 
     return visited, parent, visittimes
+
+def _test(G, V, s):
+    v, p, vt = bfs(G, s)
+    print("Is valid: ", vt == V, "Ans: ", vt)
+
+def test():
+    print("------------- BFS ------------")
+
+    graph = [[1,4], [0,2,3], [1], [1], [0]]
+    ans = [0,1,2,2,1]
+    _test(graph, ans, 0)
+

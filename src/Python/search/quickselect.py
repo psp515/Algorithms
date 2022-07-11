@@ -1,31 +1,4 @@
-
-"""
-Problem
-------------
-
-
-Parameters
-----------
-
-
-
-Algoirthm
----------
-
-Complexity O()
-
-"""
-
-def partition(arr, l, r):
-     i = l
-     for j in range(l, r):
-         if arr[j] < arr[r]:
-             arr[i], arr[j] = arr[j], arr[i]
-             i += 1
-         arr[i], arr[r] = arr[r], arr[i]
-
-     return i
-
+from search import search_tests
 """
 Problem
 ------------
@@ -37,7 +10,7 @@ arr : array
     array of elements
 k : int
     searched number
-    
+
 Algorithm
 ---------
 Algorithm takes a pivot and sorts array in two subarrays bigger than pivot and lower
@@ -46,8 +19,20 @@ than pivot then cheks if pivot is searched element, if not it continues to do th
 Complexity O(n)
 """
 
+def partition(arr, l, r):
+     i = l
+     pivot = arr[r]
+     for j in range(l, r):
+         if arr[j] < pivot:
+             arr[i], arr[j] = arr[j], arr[i]
+             i += 1
+
+     arr[i], arr[r] = arr[r], arr[i]
+
+     return i
+
 def select(arr, k):
-    l, r = 0, len(arr)
+    l, r = 0, len(arr)-1
 
     while l <= r:
         q = partition(arr, l, r)
@@ -57,3 +42,6 @@ def select(arr, k):
             r = q - 1
         else:
             l = q + 1
+
+def test():
+    search_tests.quickselect_test(select)

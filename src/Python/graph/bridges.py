@@ -57,3 +57,23 @@ def find_bridges(G):
     return bridges
 
 
+def _test(G, V):
+    ans = find_bridges(G)
+    ans.sort(key=lambda x: x[0])
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- Bridges ------------")
+    graph = [[1, 2, 3], [0, 2], [0, 1], [0, 4], [3]]
+    ans = [(0, 3), (3, 4)]
+    _test(graph, ans)
+
+    graph = [[1], [2], [3], []]
+    ans = [(0, 1), (1, 2), (2, 3)]
+    _test(graph, ans)
+
+    graph = [[1, 2], [2, 3, 4, 6], [0, 1], [1, 5], [1, 5], [3, 4], [1]]
+    ans = [(1, 6)]
+    _test(graph, ans)
+
+

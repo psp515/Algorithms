@@ -1,5 +1,4 @@
-
-
+from search import search_tests
 """
 Problem
 ------------
@@ -35,3 +34,6 @@ def bin_search(arr, value):
             l = q + 1
 
     return -1
+
+def test():
+    search_tests.binsearch_test(bin_search)

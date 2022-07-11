@@ -34,3 +34,18 @@ def topsort(G):
 
     return sorted[::-1]
 
+def _test(G, V):
+    ans = topsort(G)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- topsort ------------")
+    graph = [[], [0], [0], [0]]
+    ans = [3, 2, 1, 0]
+    _test(graph, ans)
+
+    graph = [[], [], [3], [1], [0, 1], [0, 2]]
+    ans = [5, 4, 2, 3, 1, 0]
+    _test(graph, ans)
+
+

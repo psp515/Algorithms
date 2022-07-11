@@ -17,6 +17,7 @@ Modified dfs that does not use visited array and 'deletes' visited edges.
 Complexity O(E)
 
 """
+
 def has_eulerCycle(G):
     for x in G:
         if len(x) % 2 == 1:
@@ -48,5 +49,14 @@ def print_euler(G):
         DFSvisit(G, i, cycle)
 
     return cycle
+
+
+def _test(G, V):
+    ans = print_euler(G)
+    print("Is valid: ", ans == V, "Ans: ", ans)
+
+def test():
+    print("------------- euler_cycle ------------")
+    print("Hard to test because graph can contain multiple euler cycles. (for example depending on start verticle)")
 
 

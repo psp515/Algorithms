@@ -65,21 +65,21 @@ def articulation(G):
 
     return ret
 
-def test(G, V):
+def _test(G, V):
     ans = articulation(G)
     print("Is valid: ", ans == V, "Ans: ", ans)
 
-
-def main_test():
-    print("Articulation")
+def test():
+    print("------------- articulation ------------")
     graph = [[1, 2, 3], [0, 2], [0, 1], [0, 4], [3]]
-    ans = [0,3]
-    test(graph, ans)
+    ans = [0, 3]
+    _test(graph, ans)
 
-    graph = [[1], [2], [3],[]]
+    graph = [[1], [2], [3], []]
     ans = [1, 2]
-    test(graph, ans)
+    _test(graph, ans)
 
     graph = [[1, 2], [2, 3, 4, 6], [0, 1], [1, 5], [1, 5], [3, 4], [1]]
     ans = [1]
-    test(graph, ans)
+    _test(graph, ans)
+

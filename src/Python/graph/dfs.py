@@ -44,3 +44,13 @@ def dfs(G):
 
     return G
 
+
+def _test(G):
+    ans = dfs(G)
+    print("Ans: ", ans)
+
+def test():
+    print("------------- DFS  ------------")
+    print("Hard algorithm to test because it is a bit random.")
+    graph = [[1, 4], [0, 2, 3], [1], [1], [0, 5], [4]]
+    _test(graph)
