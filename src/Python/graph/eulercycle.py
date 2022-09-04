@@ -43,7 +43,7 @@ def print_euler(G):
 
     for i in range(G):
         for j in range(G[i]):
-            G[i][j] = (G[i][j], True) # wartosc, czy mozna uzyc
+            G[i][j] = (G[i][j], True)
 
     for i in range(G):
         DFSvisit(G, i, cycle)
