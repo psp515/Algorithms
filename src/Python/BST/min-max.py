@@ -1,5 +1,23 @@
 
+"""
+Problem
+------------
+Find min / max element in BST.
 
+Parameters
+----------
+root : TreeNode
+    root  of tree.
+
+Algorithm
+---------
+
+If we want min - go left till end.
+If we want max - go right till end.
+
+Complexity O(logn)
+
+"""
 
 def min(root):
     if root.left == None:

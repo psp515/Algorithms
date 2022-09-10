@@ -1,4 +1,26 @@
+"""
+Problem
+------------
+Find next / previous element in BST.
 
+Parameters
+----------
+root : TreeNode
+    node of actual element.
+
+Algorithm
+---------
+
+# For next
+If object has right element select it and for selected element go left till end and return value.
+Else if root is root of whole tree -> return right children or none
+else go to the parent till it will be left parent.
+
+# for previous it is analogy
+
+Complexity O(logn)
+
+"""
 
 def next(root):
     # root has right subtree
